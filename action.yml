@@ -1,0 +1,24 @@
+name: 'Minier'
+description: 'Minifies JS, CSS, and HTML files using Minify.'
+inputs:
+  path:
+    description: 'The path to a directory or a single file to minify.'
+    required: false
+  types:
+    description: 'Comma-separated list of file types to minify (e.g., js,css,html).  If "path" is a directory, these types will be minified.'
+    required: false
+  type:
+    description: 'A single file type to minify (js, css, or html). This takes precedence over "types".'
+    required: false
+  file_list:
+    description: 'Comma-separated list of specific files to minify.  This takes precedence over "path" and "types".'
+    required: false
+  options:
+    description: 'JSON string of options to pass to Minify.'
+    required: false
+runs:
+  using: 'node20'
+  main: 'index.js'
+branding:
+    icon: 'minimize-2'
+    color: 'green'

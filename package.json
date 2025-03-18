@@ -1,0 +1,27 @@
+{
+  "name": "minier-action",
+  "version": "1.0.0",
+  "description": "A GitHub Action to minify JS, CSS, and HTML files using Minify.",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "minify",
+    "javascript",
+    "css",
+    "html"
+  ],
+  "author": "Tethys Neuroplexus",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "glob": "^10.3.10",
+    "minify": "^11.0.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1"
+  }
+}
