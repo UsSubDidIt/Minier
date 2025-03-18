@@ -1,4 +1,4 @@
-name: 'Minier'
+name: 'Src Minier'
 description: 'Minifies JS, CSS, and HTML files using Minify.'
 inputs:
   path:
